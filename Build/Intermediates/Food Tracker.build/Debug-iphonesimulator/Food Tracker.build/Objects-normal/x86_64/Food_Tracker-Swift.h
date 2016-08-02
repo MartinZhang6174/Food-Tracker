@@ -114,31 +114,45 @@ SWIFT_CLASS("_TtC12Food_Tracker11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+@class UILabel;
+@class UIImageView;
+@class RatingControl;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC12Food_Tracker13RatingControl")
-@interface RatingControl : UIView
-@property (nonatomic) NSInteger rating;
-@property (nonatomic, copy) NSArray<UIButton *> * _Nonnull ratingButtons;
+SWIFT_CLASS("_TtC12Food_Tracker17MealTableViewCell")
+@interface MealTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photoImageView;
+@property (nonatomic, strong) IBOutlet RatingControl * _Null_unspecified ratingControl;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
-- (CGSize)intrinsicContentSize;
-- (void)ratingButtonPressed:(UIButton * _Nonnull)button;
-- (void)updateButtonSelectionStates;
+@end
+
+@class UITableView;
+@class NSIndexPath;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC12Food_Tracker23MealTableViewController")
+@interface MealTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)loadSampleMeals;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextField;
-@class UILabel;
-@class UIImageView;
 @class UITapGestureRecognizer;
 @class UIImagePickerController;
-@class NSBundle;
 
-SWIFT_CLASS("_TtC12Food_Tracker14ViewController")
-@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
+SWIFT_CLASS("_TtC12Food_Tracker18MealViewController")
+@interface MealViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified nameTextField;
-@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified mealNameLabel;
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified photoImageView;
 @property (nonatomic, strong) IBOutlet RatingControl * _Null_unspecified ratingControl;
 - (void)viewDidLoad;
@@ -149,6 +163,19 @@ SWIFT_CLASS("_TtC12Food_Tracker14ViewController")
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC12Food_Tracker13RatingControl")
+@interface RatingControl : UIView
+@property (nonatomic) NSInteger rating;
+@property (nonatomic, copy) NSArray<UIButton *> * _Nonnull ratingButtons;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (CGSize)intrinsicContentSize;
+- (void)ratingButtonPressed:(UIButton * _Nonnull)button;
+- (void)updateButtonSelectionStates;
 @end
 
 #pragma clang diagnostic pop

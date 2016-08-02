@@ -1,7 +1,10 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "9bafd3e86cd6fec52e2e65f09bb3f141"
-build_time: [523406935, 334352000]
+build_time: [523414305, 684596000]
 inputs:
-  "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/ViewController.swift": [523406935, 0]
+  "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/Meal.swift": [523411157, 0]
+  "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/MealViewController.swift": [523414305, 0]
   "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/RatingControl.swift": [523406686, 0]
   "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/AppDelegate.swift": [523391070, 0]
+  "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/MealTableViewController.swift": [523414007, 0]
+  "/Users/martinzhang/Desktop/iOS Development /Food Tracker/Food Tracker/MealTableViewCell.swift": [523412645, 0]

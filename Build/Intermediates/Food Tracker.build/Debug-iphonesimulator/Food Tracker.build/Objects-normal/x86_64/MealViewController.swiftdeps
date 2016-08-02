@@ -1,40 +1,37 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ViewController"
+- "MealViewController"
 provides-nominal:
-- "C12Food_Tracker14ViewController"
+- "C12Food_Tracker18MealViewController"
 provides-member:
-- ["C12Food_Tracker14ViewController", ""]
+- ["C12Food_Tracker18MealViewController", ""]
 provides-dynamic-lookup:
-- "mealNameLabel"
-- "viewDidLoad"
-- "imagePickerControllerDidCancel"
-- "textFieldDidEndEditing"
-- "photoImageView"
-- "textFieldShouldReturn"
-- "setDefaultLabelText"
-- "imagePickerController"
-- "nameTextField"
 - "selectImageFromPhotoLibrary"
+- "textFieldDidEndEditing"
+- "nameTextField"
+- "textFieldShouldReturn"
+- "viewDidLoad"
+- "ratingControl"
+- "imagePickerControllerDidCancel"
+- "imagePickerController"
+- "photoImageView"
 depends-top-level:
-- "ViewController"
-- "UITapGestureRecognizer"
-- "UIImagePickerController"
 - !private "BooleanLiteralType"
+- "AnyObject"
+- "UIImagePickerController"
+- !private "UIImagePickerControllerOriginalImage"
+- "RatingControl"
+- "UIImageView"
+- "UINavigationControllerDelegate"
+- "UITapGestureRecognizer"
+- "String"
 - "UIViewController"
 - "UIImagePickerControllerDelegate"
-- "UILabel"
-- "UIButton"
 - "UITextFieldDelegate"
-- "UIImageView"
-- "String"
-- !private "StringLiteralType"
-- "UINavigationControllerDelegate"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "UIImage"
-- "AnyObject"
-- "UITextField"
 - "Bool"
+- "MealViewController"
+- !private "UIImage"
+- "UITextField"
 depends-member:
 - !private ["Ps9AnyObject", "UIImagePickerController"]
 - !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]
@@ -44,18 +41,16 @@ depends-member:
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "mealNameLabel"]
 - ["Ps9AnyObject", "nameTextField"]
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9AnyObject", "photoImageView"]
 - !private ["Ps9AnyObject", "presentViewController"]
+- ["Ps9AnyObject", "ratingControl"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - ["Ps9AnyObject", "selectImageFromPhotoLibrary"]
-- ["Ps9AnyObject", "setDefaultLabelText"]
 - !private ["Ps9AnyObject", "sourceType"]
-- !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textField"]
 - ["Ps9AnyObject", "textFieldDidBeginEditing"]
 - ["Ps9AnyObject", "textFieldDidEndEditing"]
@@ -73,18 +68,16 @@ depends-member:
 - ["Ps11CVarArgType", "imagePickerController"]
 - ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
 - ["Ps11CVarArgType", "init"]
-- ["Ps11CVarArgType", "mealNameLabel"]
 - ["Ps11CVarArgType", "nameTextField"]
 - ["Ps11CVarArgType", "navigationController"]
 - ["Ps11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps11CVarArgType", "photoImageView"]
 - !private ["Ps11CVarArgType", "presentViewController"]
+- ["Ps11CVarArgType", "ratingControl"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
 - ["Ps11CVarArgType", "selectImageFromPhotoLibrary"]
-- ["Ps11CVarArgType", "setDefaultLabelText"]
 - !private ["Ps11CVarArgType", "sourceType"]
-- !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "textField"]
 - ["Ps11CVarArgType", "textFieldDidBeginEditing"]
 - ["Ps11CVarArgType", "textFieldDidEndEditing"]
@@ -108,19 +101,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "mealNameLabel"]
 - ["Ps28CustomDebugStringConvertible", "nameTextField"]
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps28CustomDebugStringConvertible", "photoImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- ["Ps28CustomDebugStringConvertible", "ratingControl"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - ["Ps28CustomDebugStringConvertible", "selectImageFromPhotoLibrary"]
-- ["Ps28CustomDebugStringConvertible", "setDefaultLabelText"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textField"]
 - ["Ps28CustomDebugStringConvertible", "textFieldDidBeginEditing"]
 - ["Ps28CustomDebugStringConvertible", "textFieldDidEndEditing"]
@@ -139,19 +130,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "mealNameLabel"]
 - ["Ps23CustomStringConvertible", "nameTextField"]
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps23CustomStringConvertible", "photoImageView"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
+- ["Ps23CustomStringConvertible", "ratingControl"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - ["Ps23CustomStringConvertible", "selectImageFromPhotoLibrary"]
-- ["Ps23CustomStringConvertible", "setDefaultLabelText"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textField"]
 - ["Ps23CustomStringConvertible", "textFieldDidBeginEditing"]
 - ["Ps23CustomStringConvertible", "textFieldDidEndEditing"]
@@ -175,18 +164,16 @@ depends-member:
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "mealNameLabel"]
 - ["Ps9Equatable", "nameTextField"]
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9Equatable", "photoImageView"]
 - !private ["Ps9Equatable", "presentViewController"]
+- ["Ps9Equatable", "ratingControl"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - ["Ps9Equatable", "selectImageFromPhotoLibrary"]
-- ["Ps9Equatable", "setDefaultLabelText"]
 - !private ["Ps9Equatable", "sourceType"]
-- !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textField"]
 - ["Ps9Equatable", "textFieldDidBeginEditing"]
 - ["Ps9Equatable", "textFieldDidEndEditing"]
@@ -206,18 +193,16 @@ depends-member:
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "mealNameLabel"]
 - ["Ps8Hashable", "nameTextField"]
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps8Hashable", "photoImageView"]
 - !private ["Ps8Hashable", "presentViewController"]
+- ["Ps8Hashable", "ratingControl"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - ["Ps8Hashable", "selectImageFromPhotoLibrary"]
-- ["Ps8Hashable", "setDefaultLabelText"]
 - !private ["Ps8Hashable", "sourceType"]
-- !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textField"]
 - ["Ps8Hashable", "textFieldDidBeginEditing"]
 - ["Ps8Hashable", "textFieldDidEndEditing"]
@@ -233,6 +218,37 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
+- ["C12Food_Tracker18MealViewController", "AnyObject"]
+- ["C12Food_Tracker18MealViewController", "Bool"]
+- ["C12Food_Tracker18MealViewController", "RatingControl"]
+- ["C12Food_Tracker18MealViewController", "String"]
+- !private ["C12Food_Tracker18MealViewController", "UIImage"]
+- ["C12Food_Tracker18MealViewController", "UIImagePickerController"]
+- !private ["C12Food_Tracker18MealViewController", "UIImagePickerControllerOriginalImage"]
+- ["C12Food_Tracker18MealViewController", "UIImageView"]
+- ["C12Food_Tracker18MealViewController", "UITapGestureRecognizer"]
+- ["C12Food_Tracker18MealViewController", "UITextField"]
+- ["C12Food_Tracker18MealViewController", "deinit"]
+- !private ["C12Food_Tracker18MealViewController", "dismissViewControllerAnimated"]
+- ["C12Food_Tracker18MealViewController", "imagePickerController"]
+- ["C12Food_Tracker18MealViewController", "imagePickerControllerDidCancel"]
+- ["C12Food_Tracker18MealViewController", "init"]
+- ["C12Food_Tracker18MealViewController", "nameTextField"]
+- ["C12Food_Tracker18MealViewController", "navigationController"]
+- ["C12Food_Tracker18MealViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["C12Food_Tracker18MealViewController", "navigationControllerSupportedInterfaceOrientations"]
+- ["C12Food_Tracker18MealViewController", "photoImageView"]
+- !private ["C12Food_Tracker18MealViewController", "presentViewController"]
+- ["C12Food_Tracker18MealViewController", "ratingControl"]
+- ["C12Food_Tracker18MealViewController", "selectImageFromPhotoLibrary"]
+- ["C12Food_Tracker18MealViewController", "textField"]
+- ["C12Food_Tracker18MealViewController", "textFieldDidBeginEditing"]
+- ["C12Food_Tracker18MealViewController", "textFieldDidEndEditing"]
+- ["C12Food_Tracker18MealViewController", "textFieldShouldBeginEditing"]
+- ["C12Food_Tracker18MealViewController", "textFieldShouldClear"]
+- ["C12Food_Tracker18MealViewController", "textFieldShouldEndEditing"]
+- ["C12Food_Tracker18MealViewController", "textFieldShouldReturn"]
+- ["C12Food_Tracker18MealViewController", "viewDidLoad"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -241,18 +257,16 @@ depends-member:
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
 - ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "mealNameLabel"]
 - ["PSo8NSCoding", "nameTextField"]
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo8NSCoding", "photoImageView"]
 - !private ["PSo8NSCoding", "presentViewController"]
+- ["PSo8NSCoding", "ratingControl"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - ["PSo8NSCoding", "selectImageFromPhotoLibrary"]
-- ["PSo8NSCoding", "setDefaultLabelText"]
 - !private ["PSo8NSCoding", "sourceType"]
-- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textField"]
 - ["PSo8NSCoding", "textFieldDidBeginEditing"]
 - ["PSo8NSCoding", "textFieldDidEndEditing"]
@@ -269,15 +283,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- ["PSo26NSExtensionRequestHandling", "mealNameLabel"]
 - ["PSo26NSExtensionRequestHandling", "nameTextField"]
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo26NSExtensionRequestHandling", "photoImageView"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "ratingControl"]
 - ["PSo26NSExtensionRequestHandling", "selectImageFromPhotoLibrary"]
-- ["PSo26NSExtensionRequestHandling", "setDefaultLabelText"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidBeginEditing"]
@@ -290,13 +303,12 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "RatingControl"]
 - ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImagePickerController"]
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
 - ["CSo8NSObject", "UIImageView"]
-- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "delegate"]
@@ -305,18 +317,16 @@ depends-member:
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "mealNameLabel"]
 - ["CSo8NSObject", "nameTextField"]
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo8NSObject", "photoImageView"]
 - !private ["CSo8NSObject", "presentViewController"]
+- ["CSo8NSObject", "ratingControl"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - ["CSo8NSObject", "selectImageFromPhotoLibrary"]
-- ["CSo8NSObject", "setDefaultLabelText"]
 - !private ["CSo8NSObject", "sourceType"]
-- !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
 - ["CSo8NSObject", "textFieldDidEndEditing"]
@@ -333,18 +343,16 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "mealNameLabel"]
 - ["PSo16NSObjectProtocol", "nameTextField"]
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo16NSObjectProtocol", "photoImageView"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
+- ["PSo16NSObjectProtocol", "ratingControl"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - ["PSo16NSObjectProtocol", "selectImageFromPhotoLibrary"]
-- ["PSo16NSObjectProtocol", "setDefaultLabelText"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
-- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textField"]
 - ["PSo16NSObjectProtocol", "textFieldDidBeginEditing"]
 - ["PSo16NSObjectProtocol", "textFieldDidEndEditing"]
@@ -369,11 +377,9 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
-- !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
-- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerOriginalImage"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -382,18 +388,16 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "mealNameLabel"]
 - ["PSo21UIAppearanceContainer", "nameTextField"]
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo21UIAppearanceContainer", "photoImageView"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- ["PSo21UIAppearanceContainer", "ratingControl"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "selectImageFromPhotoLibrary"]
-- ["PSo21UIAppearanceContainer", "setDefaultLabelText"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
-- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textField"]
 - ["PSo21UIAppearanceContainer", "textFieldDidBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textFieldDidEndEditing"]
@@ -410,15 +414,14 @@ depends-member:
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
 - ["PSo18UIContentContainer", "init"]
-- ["PSo18UIContentContainer", "mealNameLabel"]
 - ["PSo18UIContentContainer", "nameTextField"]
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UIContentContainer", "photoImageView"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "ratingControl"]
 - ["PSo18UIContentContainer", "selectImageFromPhotoLibrary"]
-- ["PSo18UIContentContainer", "setDefaultLabelText"]
 - !private ["PSo18UIContentContainer", "sourceType"]
 - ["PSo18UIContentContainer", "textField"]
 - ["PSo18UIContentContainer", "textFieldDidBeginEditing"]
@@ -431,15 +434,12 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
-- !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
-- !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
-- !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerOriginalImage"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -448,18 +448,16 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "mealNameLabel"]
 - ["PSo18UIFocusEnvironment", "nameTextField"]
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UIFocusEnvironment", "photoImageView"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- ["PSo18UIFocusEnvironment", "ratingControl"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "selectImageFromPhotoLibrary"]
-- ["PSo18UIFocusEnvironment", "setDefaultLabelText"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
-- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textField"]
 - ["PSo18UIFocusEnvironment", "textFieldDidBeginEditing"]
 - ["PSo18UIFocusEnvironment", "textFieldDidEndEditing"]
@@ -477,7 +475,6 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "dismissViewControllerAnimated"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
-- !private ["PSo31UIImagePickerControllerDelegate", "mealNameLabel"]
 - !private ["PSo31UIImagePickerControllerDelegate", "nameTextField"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationController"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -496,8 +493,6 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
-- !private ["PSo10UIKeyInput", "text"]
-- !private ["CSo7UILabel", "text"]
 - !private ["CSo22UINavigationController", "delegate"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "sourceType"]
@@ -506,7 +501,6 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "dismissViewControllerAnimated"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
-- !private ["PSo30UINavigationControllerDelegate", "mealNameLabel"]
 - !private ["PSo30UINavigationControllerDelegate", "nameTextField"]
 - ["PSo30UINavigationControllerDelegate", "navigationController"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -523,13 +517,12 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "RatingControl"]
 - ["CSo11UIResponder", "String"]
-- ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImagePickerController"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
 - ["CSo11UIResponder", "UIImageView"]
-- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "delegate"]
@@ -538,18 +531,16 @@ depends-member:
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "mealNameLabel"]
 - ["CSo11UIResponder", "nameTextField"]
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo11UIResponder", "photoImageView"]
 - !private ["CSo11UIResponder", "presentViewController"]
+- ["CSo11UIResponder", "ratingControl"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "selectImageFromPhotoLibrary"]
-- ["CSo11UIResponder", "setDefaultLabelText"]
 - !private ["CSo11UIResponder", "sourceType"]
-- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textField"]
 - ["CSo11UIResponder", "textFieldDidBeginEditing"]
 - ["CSo11UIResponder", "textFieldDidEndEditing"]
@@ -565,15 +556,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
 - ["PSo16UIStateRestoring", "init"]
-- ["PSo16UIStateRestoring", "mealNameLabel"]
 - ["PSo16UIStateRestoring", "nameTextField"]
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo16UIStateRestoring", "photoImageView"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "ratingControl"]
 - ["PSo16UIStateRestoring", "selectImageFromPhotoLibrary"]
-- ["PSo16UIStateRestoring", "setDefaultLabelText"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
 - ["PSo16UIStateRestoring", "textField"]
 - ["PSo16UIStateRestoring", "textFieldDidBeginEditing"]
@@ -586,13 +576,11 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
-- !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "UIImagePickerController"]
 - !private ["PSo19UITextFieldDelegate", "UIImagePickerControllerOriginalImage"]
 - !private ["PSo19UITextFieldDelegate", "dismissViewControllerAnimated"]
 - ["PSo19UITextFieldDelegate", "imagePickerController"]
 - ["PSo19UITextFieldDelegate", "imagePickerControllerDidCancel"]
-- !private ["PSo19UITextFieldDelegate", "mealNameLabel"]
 - !private ["PSo19UITextFieldDelegate", "nameTextField"]
 - ["PSo19UITextFieldDelegate", "navigationController"]
 - ["PSo19UITextFieldDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
@@ -609,10 +597,8 @@ depends-member:
 - ["PSo19UITextFieldDelegate", ""]
 - !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
-- !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
-- !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerOriginalImage"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -621,18 +607,16 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "mealNameLabel"]
 - ["PSo18UITraitEnvironment", "nameTextField"]
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UITraitEnvironment", "photoImageView"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
+- ["PSo18UITraitEnvironment", "ratingControl"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "selectImageFromPhotoLibrary"]
-- ["PSo18UITraitEnvironment", "setDefaultLabelText"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
-- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textField"]
 - ["PSo18UITraitEnvironment", "textFieldDidBeginEditing"]
 - ["PSo18UITraitEnvironment", "textFieldDidEndEditing"]
@@ -645,16 +629,14 @@ depends-member:
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "resignFirstResponder"]
-- !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "RatingControl"]
 - ["CSo16UIViewController", "String"]
-- ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImagePickerController"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo16UIViewController", "UIImageView"]
-- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "delegate"]
@@ -662,15 +644,14 @@ depends-member:
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
 - ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "mealNameLabel"]
 - ["CSo16UIViewController", "nameTextField"]
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo16UIViewController", "photoImageView"]
 - !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "ratingControl"]
 - ["CSo16UIViewController", "selectImageFromPhotoLibrary"]
-- ["CSo16UIViewController", "setDefaultLabelText"]
 - !private ["CSo16UIViewController", "sourceType"]
 - ["CSo16UIViewController", "textField"]
 - ["CSo16UIViewController", "textFieldDidBeginEditing"]
@@ -681,39 +662,6 @@ depends-member:
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- ["C12Food_Tracker14ViewController", "AnyObject"]
-- ["C12Food_Tracker14ViewController", "Bool"]
-- ["C12Food_Tracker14ViewController", "String"]
-- ["C12Food_Tracker14ViewController", "UIButton"]
-- !private ["C12Food_Tracker14ViewController", "UIImage"]
-- ["C12Food_Tracker14ViewController", "UIImagePickerController"]
-- !private ["C12Food_Tracker14ViewController", "UIImagePickerControllerOriginalImage"]
-- ["C12Food_Tracker14ViewController", "UIImageView"]
-- ["C12Food_Tracker14ViewController", "UILabel"]
-- ["C12Food_Tracker14ViewController", "UITapGestureRecognizer"]
-- ["C12Food_Tracker14ViewController", "UITextField"]
-- ["C12Food_Tracker14ViewController", "deinit"]
-- !private ["C12Food_Tracker14ViewController", "dismissViewControllerAnimated"]
-- ["C12Food_Tracker14ViewController", "imagePickerController"]
-- ["C12Food_Tracker14ViewController", "imagePickerControllerDidCancel"]
-- ["C12Food_Tracker14ViewController", "init"]
-- ["C12Food_Tracker14ViewController", "mealNameLabel"]
-- ["C12Food_Tracker14ViewController", "nameTextField"]
-- ["C12Food_Tracker14ViewController", "navigationController"]
-- ["C12Food_Tracker14ViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
-- ["C12Food_Tracker14ViewController", "navigationControllerSupportedInterfaceOrientations"]
-- ["C12Food_Tracker14ViewController", "photoImageView"]
-- !private ["C12Food_Tracker14ViewController", "presentViewController"]
-- ["C12Food_Tracker14ViewController", "selectImageFromPhotoLibrary"]
-- ["C12Food_Tracker14ViewController", "setDefaultLabelText"]
-- ["C12Food_Tracker14ViewController", "textField"]
-- ["C12Food_Tracker14ViewController", "textFieldDidBeginEditing"]
-- ["C12Food_Tracker14ViewController", "textFieldDidEndEditing"]
-- ["C12Food_Tracker14ViewController", "textFieldShouldBeginEditing"]
-- ["C12Food_Tracker14ViewController", "textFieldShouldClear"]
-- ["C12Food_Tracker14ViewController", "textFieldShouldEndEditing"]
-- ["C12Food_Tracker14ViewController", "textFieldShouldReturn"]
-- ["C12Food_Tracker14ViewController", "viewDidLoad"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_Reflectable", "Index"]
@@ -721,7 +669,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "resignFirstResponder"]
 - !private ["Ps12_Reflectable", "subscript"]
-- !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
@@ -735,6 +682,7 @@ depends-nominal:
 - "Ps8Hashable"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
+- "C12Food_Tracker18MealViewController"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
@@ -756,7 +704,6 @@ depends-nominal:
 - !private "OSC33UIImagePickerControllerSourceType"
 - !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
-- !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
@@ -768,17 +715,16 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- "C12Food_Tracker14ViewController"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "2c62201eec6a73dbbcfceb4d25e306e1"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "8b8f5ec658864963e67a1380fda17f27"

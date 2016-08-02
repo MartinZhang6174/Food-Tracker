@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C12Food_Tracker13RatingControl", ""]
 provides-dynamic-lookup:
+- "rating"
 - "layoutSubviews"
 - "intrinsicContentSize"
-- "rating"
-- "updateButtonSelectionStates"
 - "ratingButtons"
 - "ratingButtonPressed"
+- "updateButtonSelectionStates"
 depends-top-level:
-- !private "CGFloat"
-- !private "BooleanLiteralType"
-- !private "Array"
-- "UIButton"
-- "CGSize"
-- "UIView"
 - !private "..<"
-- !private "CGRect"
+- !private "BooleanLiteralType"
+- !private "Int"
 - !private "+="
-- !private "*"
+- "CGSize"
+- "NSCoder"
+- "UIView"
+- "UIButton"
+- !private "CGRect"
 - !private "StringLiteralType"
 - !private "+"
 - !private "<"
-- "NSCoder"
-- !private "UIImage"
 - "RatingControl"
-- !private "Int"
+- !private "UIImage"
+- !private "*"
+- !private "Array"
+- !private "CGFloat"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
